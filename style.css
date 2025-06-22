@@ -40,8 +40,9 @@ body {
 }
 
 /* Custom scrollbar */
+
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -57,14 +58,16 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 
+
 /* Header Navigation */
+
 .nav-bio {
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
-  width: 435px;
+  width: 410px;
   max-width: 480px;
   transition: all 0.3s ease;
   padding: 1rem 0;
@@ -103,7 +106,9 @@ body {
   transform: scale(1.05);
 }
 
+
 /* Profile Section */
+
 .profile {
   display: flex;
   flex-direction: column;
@@ -122,7 +127,9 @@ body {
   animation: scaleIn 0.8s ease-out 0.2s both;
 }
 
+
 /* Floating animation for profile image */
+
 .float-animation {
   animation: float 6s ease-in-out infinite;
 }
@@ -164,7 +171,9 @@ body {
   animation: expandWidth 0.8s ease-out 2.5s both;
 }
 
+
 /* About Section */
+
 .sec-about {
   animation: fadeInUp 1s ease-out;
 }
@@ -204,23 +213,6 @@ body {
   font-size: 0.875rem;
    text-align: justify;
 }
-
-/* .sec-education-image{
-  flex-direction: row;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 0.5rem;
-  padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  text-align: center;
-  transition: all 0.3s ease;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.sec-logo-edu{
-  width: 100px;
-} */
 
 .education-title {
   animation: fadeInUp 1s ease-out;
@@ -273,7 +265,9 @@ body {
   background: rgba(255, 255, 255, 0.15);
 }
 
+
 /* Follow Me Section */
+
 .follow-section {
   text-align: center;
   animation: fadeInUp 1s ease-out;
@@ -322,8 +316,9 @@ body {
   color: #25d366;
 }
 
+
 /* Skills Section */
-/* Skills Section */
+
 .skill {
   animation: fadeInUp 1s ease-out;
 }
@@ -385,7 +380,9 @@ body {
   }
 }
 
+
 /* Projects Section */
+
 .project {
   animation: fadeInUp 1s ease-out;
 }
@@ -457,61 +454,9 @@ body {
   transform: translateX(4px);
 }
 
-/* Certificate Section */
-/* .certificate {
-  animation: fadeInUp 1s ease-out;
-}
-
-.sec-certificate {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: white;
-  text-align: left;
-  margin-bottom: 1.5rem;
-}
-
-.certificate-title {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: white;
-  text-align: left;
-  margin-bottom: 1rem;
-}
-
-.sec-certificate-fill {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.certificate-item {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 0.5rem;
-  padding: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-  }
-
-.certificate-item:hover {
-  transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.certificate-desk {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
-}
-
-.certificate-image h6 {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.75rem;
-  font-style: italic;
-  justify-items: center;
-} */
 
 /* Animation for the certificate */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -528,7 +473,9 @@ body {
   animation: fadeInUp 1s ease-out;
 }
 
+
 /* Section title styling */
+
 .sec-certificate {
   font-size: 1.5rem;
   font-weight: 700;
@@ -538,7 +485,9 @@ body {
   margin-bottom: 1.5rem;
 }
 
+
 /* Certificate title styling */
+
 .certificate-title {
   animation: fadeInUp 1s ease-out;
   font-size: 1.125rem;
@@ -550,6 +499,7 @@ body {
 }
 
 /* Container for certificate items */
+
 .sec-certificate-fill {
   display: flex;
   flex-direction: column;
@@ -558,7 +508,9 @@ body {
   gap: 1.5rem;
 }
 
+
 /* Container for certificate items */
+
 .sec-certificate-fill {
   display: flex;
   flex-direction: row;
@@ -569,7 +521,9 @@ body {
   /* This will help in centering vertically if needed */
 }
 
+
 /* Individual certificate item styling */
+
 .certificate-item {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -580,10 +534,11 @@ body {
   width: 48%;
   /* Set a width for better control */
   max-width: 500px;
-  /* Maximum width for larger screens */
 }
 
+
 /* Hover effect for certificate items */
+
 .certificate-item:hover {
   transform: translateY(-5px);
   /* Slightly more noticeable lift */
@@ -591,6 +546,7 @@ body {
 }
 
 /* Description text styling */
+
 .certificate-desk {
   color: rgba(255, 255, 255, 0.9);
   font-size: 0.875rem;
@@ -598,15 +554,17 @@ body {
 }
 
 /* Image text styling */
+
 .certificate-image h6 {
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.75rem;
   font-style: italic;
   text-align: center;
-  /* Center the text */
 }
 
+
 /* Animations */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -643,7 +601,9 @@ body {
   }
 }
 
+
 /* Typing cursor animation */
+
 .typing-cursor {
   color: var(--purple-400);
   animation: blink 1s infinite;
@@ -662,7 +622,9 @@ body {
   }
 }
 
+
 /* Scroll animations */
+
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -674,49 +636,9 @@ body {
   transform: translateY(0);
 }
 
-/* Responsive adjustments */
-
-/* @media screen and (max-width: 300px){
-  body {
-    width: 100%;
-    padding: 65px 25px;
-  }
-
-  .nav-bio {
-    max-width: 340px;
-  }
-
-  .profile-bio-name {
-    font-size: 1.5rem;
-  }
-
-  .nav-list {
-    gap: 1rem;
-  }
-
-  .nav-li a {
-    font-size: 0.75rem;
-} } */
-
-/* HP kecil */
-
-/* @media screen and (max-width: 480px) {
-    
-} */
-
-/* HP sangat kecil */
-@media (width: 200px) {
+@media screen and (max-width: 340px) {
   
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 3.5) {
-    /* Sesuaikan margin atau padding untuk DPI tinggi */
-    .section {
-        margin: 10px 0;
-    }
-}
-
-
-/* 
 @media screen and (max-width: 767px) and (orientation: landscape) {
-} */
+}
