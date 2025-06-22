@@ -1,0 +1,714 @@
+:root {
+  --bg-secondary: #ffffff;
+  --bg-blackdary: #1a1a2e;
+  --purple-400: #hsl(0, 0%, 65%);
+  --purple-300: hsl(0, 0%, 65%);
+  --blue-400: #60a5fa;
+
+  /* --bg-secondary: #ffffff;
+  --bg-blackdary: #1a1a2e;
+  --purple-400: #a855f7;
+  --purple-300: hsl(0, 0%, 65%);
+  --blue-400: #60a5fa; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  color: var(--bg-secondary);
+  margin: 0 auto;
+  padding: 65px 34px;
+  width: 480px;
+  justify-content: center;
+  background-color: var(--bg-blackdary);
+  background-image: url(https://www.dwinawan.com/new_bookmark_assets/bookmarkgradient.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  user-select: none;
+  grid-gap: 1.2rem;
+  min-height: 300vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Header Navigation */
+.nav-bio {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 435px;
+  max-width: 480px;
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+}
+
+.nav-bio.sticky {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.sect-nav {
+  padding: 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-li a:hover {
+  color: var(--purple-300);
+  transform: scale(1.05);
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1.5rem;
+  animation: scaleIn 0.8s ease-out 0.2s both;
+}
+
+/* Floating animation for profile image */
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.profile-bio-name {
+  font-size: 1.600rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  min-height: 2.5rem;
+}
+
+.profile-bio-title {
+  color: var(--purple-300);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.9s ease-out 1s both;
+}
+
+.profile-hr {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  animation: expandWidth 0.8s ease-out 2.5s both;
+}
+
+/* About Section */
+.sec-about {
+  animation: fadeInUp 1s ease-out;
+}
+
+.section-abaut {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.section-desk {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.sec-education-image:hover {
+  transform: scale(1.02);
+}
+
+.section-desk.mb {
+  margin-bottom: 1rem;
+}
+
+.section-desk:hover{
+  transform: scale(1.02);
+}
+
+.section-desk p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-size: 0.875rem;
+   text-align: justify;
+}
+
+/* .sec-education-image{
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.sec-logo-edu{
+  width: 100px;
+} */
+
+.education-title {
+  animation: fadeInUp 1s ease-out;
+  margin-bottom: 1.5rem;
+}
+
+.sec-education-image {
+  animation: fadeInUp 1s ease-out;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.sec-logo-edu {
+  width: 50px;
+  height: auto;
+}
+
+.sec-education-image h4 {
+  margin: 0;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.sec-education-image h2 {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 9px;
+  color: #bcbcbc;
+  text-align: left;
+}
+
+.education-duration {
+  margin-left: auto;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.sec-edu:hover{
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Follow Me Section */
+.follow-section {
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.section-sm {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon-s {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.icon-s:hover {
+  transform: scale(1.2) rotate(5deg);
+  color: white;
+}
+
+.fa-square-instagram:hover {
+  color: #e1306c;
+}
+
+.fa-github-alt:hover {
+  color: #6cc644;
+}
+
+.fa-linkedin-in:hover {
+  color: #0077b5;
+}
+
+.fa-square-whatsapp:hover {
+  color: #25d366;
+}
+
+/* Skills Section */
+/* Skills Section */
+.skill {
+  animation: fadeInUp 1s ease-out;
+}
+
+.sec-skill {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.sec-skill-image {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.sec-skill-image:hover {
+  transform: scale(1.02);
+}
+
+.skill-row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.skill-icon {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.skill-icon i {
+  font-size: 30px;
+  color: white;
+}
+
+/* .skill-icon p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: white;
+} */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Projects Section */
+.project {
+  animation: fadeInUp 1s ease-out;
+}
+
+.sec-project {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.sec-project-fill {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.project-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  padding: 1rem 1rem 0.5rem;
+}
+
+.project-image {
+  padding: 0 1rem 1rem;
+}
+
+.image-web {
+  width: 160px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-image h6 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-desk {
+  color: var(--blue-400);
+  text-decoration: none;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.project-desk:hover {
+  color: #93c5fd;
+  transform: translateX(4px);
+}
+
+/* Certificate Section */
+/* .certificate {
+  animation: fadeInUp 1s ease-out;
+}
+
+.sec-certificate {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.certificate-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.sec-certificate-fill {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.certificate-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  }
+
+.certificate-item:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.certificate-desk {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.certificate-image h6 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+  font-style: italic;
+  justify-items: center;
+} */
+
+/* Animation for the certificate */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.certificate {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Section title styling */
+.sec-certificate {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  /* Changed to center for better alignment */
+  margin-bottom: 1.5rem;
+}
+
+/* Certificate title styling */
+.certificate-title {
+  animation: fadeInUp 1s ease-out;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  text-align: left;
+  /* Changed to center for better alignment */
+  margin-bottom: 1rem;
+}
+
+/* Container for certificate items */
+.sec-certificate-fill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center items horizontally */
+  gap: 1.5rem;
+}
+
+/* Container for certificate items */
+.sec-certificate-fill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* This will center the items horizontally */
+  gap: 1.5rem;
+  justify-content: center;
+  /* This will help in centering vertically if needed */
+}
+
+/* Individual certificate item styling */
+.certificate-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  width: 48%;
+  /* Set a width for better control */
+  max-width: 500px;
+  /* Maximum width for larger screens */
+}
+
+/* Hover effect for certificate items */
+.certificate-item:hover {
+  transform: translateY(-5px);
+  /* Slightly more noticeable lift */
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Description text styling */
+.certificate-desk {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Image text styling */
+.certificate-image h6 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+  font-style: italic;
+  text-align: center;
+  /* Center the text */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Typing cursor animation */
+.typing-cursor {
+  color: var(--purple-400);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Scroll animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+
+/* @media screen and (max-width: 300px){
+  body {
+    width: 100%;
+    padding: 65px 25px;
+  }
+
+  .nav-bio {
+    max-width: 340px;
+  }
+
+  .profile-bio-name {
+    font-size: 1.5rem;
+  }
+
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .nav-li a {
+    font-size: 0.75rem;
+} } */
+
+/* HP kecil */
+@media screen and (max-width: 480px) {
+    /* styling untuk HP */
+}
+
+/* HP sangat kecil */
+@media screen and (max-width: 320px) {
+    /* styling untuk HP layar kecil */
+}
+
+/* HP landscape */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    /* styling untuk HP mode landscape */
+}
