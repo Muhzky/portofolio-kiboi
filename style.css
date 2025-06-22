@@ -709,6 +709,14 @@ body {
   
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 3.5) {
+    /* Sesuaikan margin atau padding untuk DPI tinggi */
+    .section {
+        margin: 10px 0;
+    }
+}
+
+
 /* 
 @media screen and (max-width: 767px) and (orientation: landscape) {
 } */
