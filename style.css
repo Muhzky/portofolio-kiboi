@@ -705,7 +705,7 @@ body {
 } */
 
 /* HP sangat kecil */
-@media screen and (width: 200px) {
+@media (width: 200px) {
   
 }
 
