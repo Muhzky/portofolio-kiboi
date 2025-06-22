@@ -699,16 +699,16 @@ body {
 } } */
 
 /* HP kecil */
-@media screen and (max-width: 480px) {
-    /* styling untuk HP */
-}
+
+/* @media screen and (max-width: 480px) {
+    
+} */
 
 /* HP sangat kecil */
-@media screen and (max-width: 320px) {
-    /* styling untuk HP layar kecil */
+@media (max-width: 600px) {
+  
 }
 
-/* HP landscape */
+/* 
 @media screen and (max-width: 767px) and (orientation: landscape) {
-    /* styling untuk HP mode landscape */
-}
+} */
